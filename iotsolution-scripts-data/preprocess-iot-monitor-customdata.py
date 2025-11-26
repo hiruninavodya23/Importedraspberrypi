@@ -23,6 +23,8 @@ import datetime
 import time
 import os
 
+preprocesslogic = 'MIN,MAX,COUNT,VARIANCE,OUTLIERS,ANOMPROB'
+
 basedir = os.environ['userbasedir'] 
 
 # Set Global Host/Port for VIPER - You may change this to fit your configuration
@@ -212,4 +214,5 @@ loop.create_task(spawnvipers())
 asyncio.set_event_loop(loop)
 
 loop.run_forever()
+
 
